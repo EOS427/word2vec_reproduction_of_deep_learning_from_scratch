@@ -1,0 +1,17 @@
+#git
+/.screenshots
+
+#虚拟环境
+.venv
+
+#pycharm产物
+.idea
+
+#编译产物
+__pycache__/
+*.py[cod]
+*$py.class
+
+#缓存文件
+*.pkl
+ptb.train*
