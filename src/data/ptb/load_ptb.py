@@ -1,6 +1,7 @@
 import os
 try:
     import urllib.request#网络访问标准库
+    import urllib.error#URL 错误类型
 except ImportError:
     raise ImportError('Use Python3!')#确定python解释器版本
 import pickle#序列化保存与读取恢复复杂数据结构库

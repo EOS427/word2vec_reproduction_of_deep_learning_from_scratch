@@ -14,7 +14,6 @@ def load_tool(name):
     elif name=="word2vec_package":
         tool=data.get("tool",{}).get("word2vec_package",{})
     else:
-        print("error:retry")
-        return None
+        raise KeyError(f"unknown tool: {name}")
 
     return tool

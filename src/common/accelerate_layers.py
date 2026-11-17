@@ -131,7 +131,7 @@ class Unigram_Sampler:
                 self.voc_size,
                 size=self.sample_size,
                 replace=False,
-                p=prep_p.get()
+                p = prep_p.get() if GPU else prep_p#区分兼容问题，方法不同
             )
             negative_samples=numpy.asarray(negative_samples)
 
